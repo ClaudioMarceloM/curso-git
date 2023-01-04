@@ -23,9 +23,9 @@ const getCommentsForEachPost = async (posts) => {
   postComments.forEach((comments, i) => posts[i].comments = comments);
 }
 
-const renderHtml = (user, posts) 0 => {
+const renderHtml = (user, posts) => {
     const content = document.getElementById('content');
-    content.innerHTML += `<h3>Posts del usuario ${user.email}</h3>`;
+    content.innerHTML += `<h3>User post ${user.email}</h3>`;
     
     posts.forEach(post => {
       content.innerHTML += `
